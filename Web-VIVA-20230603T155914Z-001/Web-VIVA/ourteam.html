@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Our team section using HTML & CSS</title>
+    <link rel="shortcut icon" type="image/png" href="Photos/TabIconPng.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navBar.css">
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,800;0,900;1,500;1,900&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=4KVU2NT713UBQpUXRdeCr0n3UnpokLg_au9clYKvkcGrgxPB4IonxEU3dYLODGkB642uwwsTrJ7JNuzSvE7nFzoTkCVOGIC05npq-ZNKPcWmLKmEI5Yu-mGSmqkxNlOIMebZ4eo9vc502AsCRvqhEfSIA_dNFdF46EfF0-dUN6vPJc3jFLi9dDbayvZXgXFSKwCDsZG-rOS6heQxBeo6fY8NtsykCRpYbJ2SKxQCxbjIm6oJhwvA1PDGbKsT1zwamKz4GkCD9UnpP806ntKqDvx8lHrGGI56unqZq9lB-1iSi5eoHf2Dhh78ld2mFA1vXIIWCZ_6ErFtIm_u7khVjfun_blEHIgp3StvP-hsZjjE071kxnHFERKbj7cqZfOCRKvd7VhBHqot6Agz9s2v4rYkznhdQDZICqBdbmNnTkMsqegqs0Q2U25GzhtF1MlhUpS-VUDuDMBZ1wQDymYnQvjOhAyLMQa_dIOX5RHJn2jNo2H8kdq2hC5hiM34eBzcZhAdxueTwNP44drClEz2qIFO_dI2ZscWH0JkzS9hwws4Hbaaup8__2ePfej28U7lmfXRDsxXQrQhcrkdoxzWeMxefLHD0kMDsIDSKCF09vaKfySw858qJ0M3Fhi-ipDdIKT8TN9DQTxRPTguZCAjY3lZSLKclpudn7l6ksDTmHEAuZARLpzMi5tVKAnrbZUztuM7Fv2YF08abpwv4W5cnkC39Tyq3ppDaGngWsB_0iwSGFj27651iSLd3FpaE_PRnbQtrNxHvuKQsTh_O5YhNKWUOHvWeJt_hkFceLBRSwv0EeQrN1K92b7JeAO2FyeGkYwm2UjfD4XaGhsmvUMeNnhmjPS6Yj5xjNRBYvioe2jiiMRuMPayltPMnehpWIU0hijuASbDTGwcXNGctZtNGn754HSzitfrZLKAqfEpYBJYoN6aZFdS6jyxofe4EXGTe2eDrZa38OGvZsA4CwOVB1aFJ6WVKk9knsHz7emjYDw-ixQPSwo1ThEIo2nlu6Oo2VZTWPw4uXvogMqRG7lhu_VYJl7ys0GRT_NXwMKnPNlhywWmRGm1JMmhtj_K0Fcthm_v-Ij6i9rZX9ujChr80_3OJJ9JA2cD4ZkrszN3GMGvmVbiq-4M3Oa3wNIG9sdBKz7fXgw7WfEajWGnJqljImlwXCHCbU8OMbPUJpj-ZOH7XfPgk7acBSjgbXCZqLHLLSXe64yTTpyxP1c9-4l3YBc1sZlUp1Yvn8DaLfURA-H9XdAINk8U4G0P8ce--zE1UKyDmTcH8mgSwNg-Oev5DLa_GFIykHGUmgOuqO-iJiroYXQO2ERZCz7OIf7wT-Uybzs3WFFXyVcWWUyxTfpwHBblOT3kKbvUdJFuqXD2eHScZIte8QaijBjbUGQ_Snar" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9kb2MtMTAtMGctZG9jcy5nb29nbGV1c2VyY29udGVudC5jb20vZG9jcy9zZWN1cmVzYy9sNmliNXJuMDNuMTNodGZrMDI4c3FwdnNyc3FibWYwbS9saWJtN3FuNmhvbHFnbGlzbGw0OGcxMWdic2wyM29pZC8xNjQ4NjI1NDc1MDAwLzAwNDQ4NDg5NDkxOTEwNjk4MzIwLzA5NDA3NDk4MjczMzAwMDc4MzY1LzFsbHlwX2ZaT19hNUR2c1RnWjNNRUtSWHg0QmRDU25uQj9lPWRvd25sb2FkJmF4PUFDeEVBc2JnZlZXYUwyMlhNTDlMOFpmSnl0MWt3MVNhc1hiNzBBdWl6ZXY4b2ZfRTQ5blg1SU5NbW1tZjBQZFA4R1VkekVwZEhEdXoyOWVtamdNa0VXSjJQWnl6WGJ6WHdrTmNoLUNjdDRUMXBGc19fdkJXTE4tWHM2aGpINU52ZFV6MXhuemNHOUpqMDVBSmNtQ0g0VWwtV21iNXhDMUxfdXJhaGZLWHQ4YkczemFWOTFKLXlVbU1kTTFsVVNlekdvREVlLVFLYmpmSDBPNy1iYUZCSXVpU1VXY0xfbmlNN3owbzZGZUNYbzhPMjVOWjhoSEd5X3dyUFJjV3FFb25xMjROUEtMQ0c2WlM2VXFMTDJkMXlPU3I0eUpRcE9JelZFWmlnNS1wdkk1cEZxWG1BRUxoVVAyQzJFSW03M3F4LTlqWndlZzZCRklIcFZzb1ZFbzRfZXNxS0dVWlJHc0dhMFBEYUJOdzMxWGJlQ0RfYTctNmM2bkxjUHlyZEdieHFncURReHNIT2lZaUUySHBlR1U3b1hHS3BvX3hreWJTczc2WExKVjNZNVhFdEdMeTF5QTY5NXVLc3dLNl9XRy1NZmFkUDQ5enI1b1FDYkFETzZ1MmlhOVBWdVNyeEV4R1BOQXNCaTJVY1RvYV92c2cwZTBjNUtjSVh5MlA1c0pmTWVDc1lnalA4OEtzeU1yMlhSRWxoMkJURWgyY01NUm1nX2dRY0lFYjRvYjRKcVczNy15VVlXbkhKcEVEX2ZacEZiaFBjMEtVSWVkZ0pWSUdNajVJOEpkbE11WTNmQklYYnJ6eURfQThJRnBPbGN5eExiemRXcFBHQUlDWWVvcVhLRE1aTkJVR3ZsdkNtaXBrNVlvSnRaZzdUYldDckhlVTB3TmlSY2pTb09YQjh3bExQbVhudDVoZ1FfVEZqdUhxMFoyX1B1czMmYXV0aHVzZXI9MCZub25jZT02OGg1MjdrZGNodDJnJnVzZXI9MDk0MDc0OTgyNzMzMDAwNzgzNjUmaGFzaD1pMmRrbWtndm8zYWw5Y2J2M3MyamVoNTRpYnU3bWl0MA"/></head>
+  <body>
+
+    <!--Navigation bar-->
+    <nav>
+      <div class="containers nav__container">
+          <a href="main.html"><img src="Photos/blitz_logo-01.png" alt="" width="120" height="31"></a>
+          <ul class="navbar">
+              <li><a href="main.html">Home</a></li>
+              <li><a href="thumbnail.html">Sports</a></li>
+              <li><a href="queryForm.html">Query Form</a></li>
+              <li><a href="Quiz.html">Quiz</a></li>
+              <li><a href="sitemap.html">Site Map</a></li>
+              <li><a href="additionalPage.html">Additional Page</a></li>
+              <li><a href="ourteam.html">About Us</a></li>
+              <li><button onclick="document.location='buyProducts.html'" class="btn btn-primary buy-product-btn" type="button">Buy Product</button></li>
+          </ul>
+      </div>
+    </nav>
+
+    <div class="about-section">
+      <h1>| About Us |</h1>
+    </div>
+    
+    <div class="row">
+      
+      <!--1st member-->
+      <div class="column">
+        <div class="team-info">
+          <!--Student image-->
+          <div class="imgs">
+            <a href="student1.html" target="_blank"><img src="Photos/AboutUs1.png" alt="Marambe" style="width:100%"></a>
+          </div>
+          <!--Student details-->
+          <div class="container">
+            <br><br>
+            <h4>Pasindu Marambe</h4>
+            <p>Student 1</p>
+            <p>Westminster ID : w1867457</p>
+            <p>IIT ID : 20210375</p>
+          </div>
+        </div>
+      </div>
+      
+      <!--2nd member-->
+      <div class="column">
+        <div class="team-info">
+          <!--Student image-->
+          <div class="imgs">
+            <a href="student2.html" target="_blank"><img src="Photos/AboutUs2.png" alt="Matharage" style="width:100%"></a>
+          </div>
+          <!--Student details-->
+          <div class="container">
+            <br><br>
+            <h4>Pasindu Matharage</h4>
+            <p>Student 2</p>
+            <p>Westminster ID : w1867454</p>
+            <p>IIT ID : 20210367</p>
+          </div>
+        </div>
+      </div>
+      
+      <!--3rd member-->
+      <div class="column">
+        <div class="team-info">
+          <!--Student image-->
+          <div class="imgs">
+            <a href="student3.html" target="_blank"><img src="Photos/AboutUs3.png" alt="Chathuni" style="width:100%"></a>
+          </div>
+          <!--Student details-->
+          <div class="container">
+            <br><br>
+            <h4>Chathuni Abeysinghe</h4>
+            <p>Student 3</p>
+            <p>Westminster ID : w1867450</p>
+            <p>IIT ID : 2021356</p>
+          </div>
+        </div>
+      </div>
+      
+      <!--4th member-->
+      <div class="column">
+        <div class="team-info">
+          <!--Student image-->
+          <div class="imgs">
+            <a href="student4.html" target="_blank"><img src="Photos/AboutUs4.png" alt="Marambe" style="width:100%"></a>
+          </div>
+          <!--Student details-->
+          <div class="container">
+            <br><br>
+            <h4>Thimali Waduge</h4>
+            <p>Student 4</p>
+            <p>Westminster : w1867089</p>
+            <p>IIT ID : 20210333</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page Editor -->
+    <button onclick="document.location='student3.html'" class="page-editor-btn" type="button">Page Editor</button>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    

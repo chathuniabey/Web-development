@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>page editor</title>
+        <link rel="shortcut icon" type="image/png" href="Photos/TabIconPng.png">
+        <link rel="stylesheet" href="page_editor.css">
+        <link rel="stylesheet" href="navbar.css">
+        <!--FONT-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,800;0,900;1,500;1,900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=c2ht3ovEdXm-sYOR_W3dANqUMfQgyfYlxXBPgeVuyUebfN4qmWqrU82lAo9BfxLxWR8omvk__Y0qeGauEMaPef4Yn9Zi0pcPW4OHMXFX4cmlzYkcObe2ezBQ4RExfv72bol8q3eQDmgqNLh49HblDiKFOxKk23_8SnQm9pAskj4vdyAAicuaULdzQaDTrc8nxi5ndxKGROJRIh_-SOHeJHA9vP7VgO2g8pV1ZdWfnB6vtlh8y5bsgIUQeB0xmLGKuvK4tXRefwqIf3BJzAovpJ2Hwy-En03C16QdarotyRph82t8VXXWS8vIF8ktRvJpSxJcHQHN7QKWwcRMB66cctZeRf15j15_GHloK7UR4ubFVvGktj60iiNjFwrqJhJL1Q_Y9nwByr8QkYJlgMKvSHYyBw_oWPcFNhPU8U2V7d4gQFywIVG3nAthtcNuJu4YiySpsoO5int9qKJl5tbl1M7uZkvvzM9HgYgIJMjSNz9rSEjZHa4ZWP5BIQBW0DLl6jVmZ6_eiDnoVHODd5XFBOgMPpcFlF6YZiWP2VkwMY1Nf-Mi0uqYEAhNb32yzJeJdzwYeXQ1vjzgFm5wx3LUumf9g9TEh3ixmzCRsoiWDjK07PbxvtDBID90HhM4z2NT-iMwxLqhFLc5Fhh6s0N2nF25X8GaMOudtgXXIwTSxYFLT6u15yFq17-AHqoW8c06TG-dVLzyaadcgRrToZiHhXTzbwX1TXy-5M_74VDEpPWwY2MF7-RQ-MdxKWj0I1vimuYt7kkcVUGx1UXYeeh2VyM8rAvQdkVGIb8BQJ9Suj52CVry7tiSn6PL2nK55EzUhqv2r_LjpUOJU5s0UZBDMG9iEsVYL8JhVX9MC3oBHYDS2fZ8ryBVJWNnszopogWoxFaPUT_-d7OQAMSh-4aCV8vxUfmpiH3JV_qB6wjp1oxscVDUkU41Wm7TJ_Y0SpvKM84XrqVVOAgYmAR-ONPGbG34B17L9s1Dsgj8sS_fQ5spyJkRvbpgoysGsbm6sC_vYIt7IskoHF-cSGdpcmeYGWg7nmrHygWdOzl8jCT1WvqWJHtmIO9AsuyCEK5Y8HBWwdoU8ihaeJ4pv31CRz6-gLoa5MIsCh824pgoTdMe7DrGWAbLkQodp6P474C7Jc-zC-pBgSYcmCCflVjmnLGYaZHJ9PRrY-fP6lTMm84dI5rW_AeZqWQBgZwBMnhTE-j4gh6fSgEkvubYVYVbPZed-sxVRJRA_9gDC0BFCQIWAGLvt0XJYm4SW5mPr7wgar5SDb9Lx7bk2rzZG8nlNOIWLg" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9kb2MtMGctMGctZG9jcy5nb29nbGV1c2VyY29udGVudC5jb20vZG9jcy9zZWN1cmVzYy9sNmliNXJuMDNuMTNodGZrMDI4c3FwdnNyc3FibWYwbS8wNm5tdjZmZ3YzbDF1dmIwdTlsNTBpZjRsZGZhczNqMC8xNjQ4NjI1NDc1MDAwLzAwNDQ4NDg5NDkxOTEwNjk4MzIwLzA5NDA3NDk4MjczMzAwMDc4MzY1LzFBRnZDWUlrQnVGbEN1NTAzTDhQTW5RcnNJRFhPTlNKYT9lPWRvd25sb2FkJmF4PUFDeEVBc2FMdTFJcjVHb2J1dnhpOTBhWEJCaGEwOFliSkdSZXBnWEVvYVcyYUpWSHFfVTlHUENXTTIxMVlDZGVwQUd2STJPQnZCU2RUNnU5dlM1T01tSm1VUno4U2V5SzRUeS1HYzF0NzZvaFp5THEyNl9KNzJsd09hd19HWjEyREpRaWdlLVdnTFluN2l4dHhDSm51ZmRMWjNGdlJzWXdlT0wxT3Z1SXlYbGJSZ0hOMllHWmktY3IzTlExel9tNUk5b25CelhCZ2VGdkpmUFNwZkxWSHJoQ05Wb2VmcVo4RjZnRW5KaEVvMFNoLUItakNiRV9SZDBUUnBTNGV6MDAzcVduYXVIelBPN0pIVFk0Tk1ERDdianpwbHRra21BRmltTHlmR2tCR2g3OFdpcWhWMlVVRU55Vjc3TFUydlEtSEViRDl1VDVYM1h0Z043TmVWZE91M0VxS2poWFZSaUZkVjcya2Y5eC16dW1wY2t1bVU4NEJISGZ3Wnk4ei1NZUhOaFhoT2tNQUp1RnJ0N3VIU192ekVBb19aR0JrQWNrcklVWWlhQWJrMUZiX0RSMnZRNm11X3l5cnNuOHNtTXoycGFobkQ5eXNBNGM3aEhYb2pUemdrX1M5ZGFvLWxSN0t0d0ZYb2w0cm9KZmdXYW9xajJ6VEk0dExBQ1VQanU0WC1raDYyU2JzQTFWaU9wTDJvazAwdGZCTzFobFJwQmlwN0VxYzVTVlhEMlhJazFWUC04d1hBeEIzYWhfU05qMnBaRmw0TWtEVVVFRUZCMlR5ckRVUUl6T2dEdE5YeEtFN01iZkdpVUgyajZ1NjdicllWcEhzOGlGam9jRzU5WHpjT0JfTjBFY2xsdHlOZmRQNGJWeEhmc0hUWDdGNmNYZE94ai1jMl90d3piSTE0eDRadXlHcExxeHJkMm03UFRMLURaRGpkQVUmYXV0aHVzZXI9MA"/></head>
+    <body>
+        <!--Navigation bar-->
+        <nav>
+            <div class="containers nav__container">
+                <a href="main.html"><img src="Photos/blitz_logo-01.png" alt="" width="120" height="31"></a>
+                <ul class="navbar">
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="thumbnail.html">Sports</a></li>
+                    <li><a href="queryForm.html">Query Form</a></li>
+                    <li><a href="Quiz.html">Quiz</a></li>
+                    <li><a href="sitemap.html">Site Map</a></li>
+                    <li><a href="additionalPage.html">Additional Page</a></li>
+                    <li><a href="ourteam.html">About Us</a></li>
+                    <li><button onclick="document.location='buyProducts.html'" class="btn btn-primary buy-product-btn" type="button">Buy Product</button></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--Student-->
+        <div class="about">
+            <div class="main">
+                <!--Student image-->
+                <div class="main_left">
+                    <img src="Photos/AboutUs4.png" alt="Thimali" width="400" height="400">
+                </div>
+                <!--Student details-->
+                <div class="main_right">
+                    <h3>| Thimali Waduge |</h3><br>
+                    <h3>UoW ID : w1867089<br>
+                        IIT ID : 20210333<br>
+                        ROLE: Student 4</h3><br>
+                    <ul>
+                        <li>Creating the Digram(SVG).</li>
+                        <li>Creating the Thumbnail images.</li>
+                        <li>Creating the Main (Home) Page.</li>
+                        <li>Creating the Extra content page/anchors.</li>
+                        <li>Creating the Logo.</li>
+                        <li>Creating the Additional Page Editor.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

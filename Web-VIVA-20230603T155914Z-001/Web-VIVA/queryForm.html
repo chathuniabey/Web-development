@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Blitz Query Form</title>
+    <link rel="shortcut icon" type="image/png" href="Photos/TabIconPng.png">
+    <link rel="stylesheet" href="navBar.css">
+    <link rel="stylesheet" href="queryForm.css">
+
+    <!--JS Part-->
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=EKZQbGEpqkXRlpHYqmbdF-yyLjZIgh3X6jTK5LYu5levlcl8ErzGwPh-0FSnfGFHagVx1A59utrVi1hz0shF4OyuhUzH89sQjE5I_1-5wSex_tnRsF6wOXPGjZpRwHRQL1NrzI-gvHkaPil3BtTq4xwv_3CKRspHSdXVPZxedC79pBrzVqg5WvtwkF1FEFTdsOSNO9zqmHAemVFRF5xlLOimY-oSRAiQlnp_l-4WSO7nrmAWUVz5Hl_E20WfdN28y3lo-dwTMJAewCvtfYBA6oYLStnRyf_y4KsjkgWEgcb7yveMhm7_HVji0chvv8JH3pjkY3Q_My1q7oJtH1aJ4x9NoupS0Qsgn8UqWa-rEwhTQumaeivoOYcfpeQk1gui3g5nqELO73BXjAEnBxYb3gOlU05Ht2G53OiBqHAufN2hYO55wfnd_5OTcASEWVxHcWKtp8LAaViDfdhE6_1sZNU2PuNU-wFBD0vHV4-Ub-PiKE8fYz8oYycYzdhVSgAVz2bfjtijyhNP5DDUMHYQYfEw5yAu0B1TW3Sop0w1ZE4mUDlMFWlJ7jD4IUitKdU0UeyuxSvdZ7i4laoMB5UyhiKZGE347WPKXEy07Ha0ke1GoVIHZtiIzo9t-g84xinwL9l1t3DU0wvemCgvSVpnuH4oGTnVBugxeoDi_3eViJZ7I6LCjNanK32EoatjOyQKA9CvSJxyqRTW13YhhxcDP58jmx86unjcr48oXldPW1qj2RsyxUiazst2G4_1LSuVrWEO39t3XQW5koeTRdK_WSTYDs-bF-1mPxGs969YMgoKMuNLFvOrLZ_N9G-14qiyVMt8XqsWndBOddwD1K6gzOwZZLwG2hgvbIVBxk13pXKTnH9iNUv3mPzzkDG6t5HAZ9kq1j9-JuVr_qiqn84UEr-OXfAE8r7hgbwHFIe3RPnVT2V93jUs1ujfFVcmdSw4u5-I9Y6CPyFBZqYKkSUpxKa2HA_q_bHK88OOHwUGmqLkeguDvPJFfgcW9DZG1C58ipLApLkhmQKj96YW7WdAB_oodagfPkNpl7Lg2pR9jfjCJ6EqqpV6QR9iQC7QIFnX5668iEku1v8jYpnaYUETAL1YcI2oslPAvV6AkyKaB3rQcTB7P5qDkDfRX9jcUNZAVtKs41ztmSEHcbpJI2cKv3WPwrwMS2u0NhjzUxHQ_JNkzfCPIuDHTwfGhLwJoZfekxM-jDQ3fNnyqFKzT3BvPMEC2dQSRkHPvZOKyp8rQoLQVfkw1o1WTT_Ma5q9kVIEBv9bI1EHtUxEXyklbzIUGg" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9kb2MtMGMtMDgtZG9jcy5nb29nbGV1c2VyY29udGVudC5jb20vZG9jcy9zZWN1cmVzYy9sNmliNXJuMDNuMTNodGZrMDI4c3FwdnNyc3FibWYwbS9mNmJkM3AwYzZicHAzbGJkOWk1Zm5laG1qOWsyZmRuZC8xNjQ4NjI1NzAwMDAwLzA0ODc1NzMyMDQ0NTAzMjM0OTA5LzA5NDA3NDk4MjczMzAwMDc4MzY1LzFrcFM2dmpURFdsazl5OTR3ZEFIRHRUTzA5YWp3VldaOT9lPWRvd25sb2FkJmF4PUFDeEVBc1lVN2FyajZJWkJBd3ozUEpFcDFYck9rMm43Wnl6TjVOeHZNTnlKMW01eXRLT1Rxci1KeGlEaUtyVk9SdXByZ2ZTNGJtMFNfbVg1aE1ObUxSN21kUGg0SnVIUU5iWDNNY3JFb05VR0l4Y3k3RnRQLUNLanQ4WnFtS2JhS1VEODV2b1JJRG5wcXhTM0NxQkRiNG4ybGJpS2Q2R0Z3bjc3SjNONXJTOGZlbTdNcGJlVVZtVWxsNDg3YU1EM19aUWw1Z3lQR0JOQ0NCcTRxZ0tCWGllRm1OOW1sdkZJODdRR1d2TlJXWU5fRHpRQnEyS1kybjNUSGdfemFsUEgyRHl0ZHVabE1WNHBIUzA0RnFRNS1NSm9SYlRsUzJBUGs1MXZ2dEdrOUZGbXFCZnNpT2RHWWJZbFBIM2NyV0JDejdzam95SGNmSTBkY0JhX3k5Y2tMQnkzQTFGNU1JVExZcEtZeUZid2xyQ1NQdkJwYzBleEN6ZUJvcDlDTzZheEZrNlBNWmlaN2U2VHdQMmpCd2NZVmhmV2FUVDVnWVE5M3F5cTd6RkduN0VNN2pSRlBOSFhxX0N6M0ZwQlBSQ0pnTUl5azdLa3ZveFBxM3JoTUNValp2YVVnS1piOVFfdGNLc2JWNG16ZnlnMWpFU3RUdjl0UnBza280bjdrWndfeGg5WTVzb0oxWjYtQmFxWE1VdGlDOUZ1TVVJSl9jekF1Wmx0OVlvQlhFeEFtNE9FUzQ5RUt0NURwdTlXaVJoeHNrcXNiQlR3WjZDQmFjeFZXU0w5Zmc2ZmNkZ1ZmanBON0psMHd3eW9JR2Z3R3JFVFUtNFF5T3lPUURrZl94QUlZb3Z2Yi05Y05HV3FQU294TUVFUjJqekxEVWxxc0RnNFBrUTI3VVJ6SkZRQWNuazA2MHV5RTJETWVKOTdyTnVDemFQUTVSR2wmYXV0aHVzZXI9MA"/><script>
+        function validation(QueryFormRef){ 
+            var fname= document.getElementById("fname").value;
+            var lname= document.getElementById("lname").value;
+            var email= document.getElementById("email").value;
+            var c_number= document.getElementById("c_number").value;
+            var querySubject= document.forms["qqform"]["querySubject"].value;
+            var qdetails= document.getElementById("qdetails").value;
+
+            if (fname==null || fname==""){
+                alert ("Please fill the first name in the form!!");
+                return false;
+            }
+
+            if (lname==null || lname==""){
+                alert ("Please fill the last name in the form!!");
+                return false;
+            }
+
+            if (email.indexOf("@") == -1 || email.length < 10){
+                alert ("Please enter valid email!!  | NEED @ MARK |");
+                return false;
+            }
+
+            if (c_number==null || c_number==""){
+                alert ("Please fill the contact number in the form!!");
+                return false;
+            }
+
+            if (querySubject==null || querySubject==""){
+                alert ("Please fill the subject if the query in the form!!");
+                return false;
+            }
+
+            if (qdetails==null || qdetails==""){
+                alert ("Please fill the query details in the form!!");
+                return false;
+            }
+
+            else{
+                /* displays the summary */
+                document.getElementById("summaryView").style.display = 'block';
+                document.getElementById("summaryView").innerHTML =	'<dl class="formSummary"><dt class="ti"> --- Here Your Query Summery --- </dt> <br><br> <dt class="topic">First Name: </dt>'+
+                                                                '<dd class="value">'+fname+'</dd>'+
+                                                                '<dt class="topic">Last Name: </dt>'+
+                                                                '<dd class="value">'+lname+'</dd>'+
+                                                                '<dt class="topic">Email: </dt>'+
+                                                                '<dd class="value">'+email+'</dd>'+
+                                                                '<dt class="topic">Contact Number: </dt>'+
+                                                                '<dd class="value">'+c_number+'</dd>'+
+                                                                '<dt class="topic">Query Details: </dt>'+
+                                                                '<dd class="value">'+querySubject+'</dd>'+
+                                                                '<dt class="topic">Query Description: </dt>'+
+                                                                '<dd class="value">'+qdetails+'</dd>'+
+
+                                                                '<div class="viewBtn"><input class="editandsendbuttons" type="button" name="edit" value="Edit" id="edit" onclick="previousPage()">'+
+                                                                
+                                                                '<button class="editandsendbuttons" type="button" value="submitted" onclick="previousAndClear(this.form)">Send</button></div>'	                                          
+            }
+        }
+
+        function previousPage(QueryFormRef){
+			document.getElementById("summaryView").style.display = 'none';  /* edit the form */
+		}
+
+        function previousAndClear(QueryFormRef){  
+            alert("Your query form submited!! Please send the Email to our team and we will try our best to get back to you soon. Thank You!!")
+            document.getElementById("form").submit();  // open Email
+
+            document.getElementById("fname").value = " ";  //clear form
+            document.getElementById("lname").value = " ";
+            document.getElementById("email").value = " ";
+            document.getElementById("c_number").value = " ";
+
+            document.getElementById("delivery").value = " ";
+            document.getElementById("stock").value = " ";
+            document.getElementById("exchange").value = " ";
+            document.getElementById("other").value = " ";
+
+            document.getElementById("qdetails").value = " ";
+
+        }
+    </script>
+    <!--End JS Part-->
+
+</head>
+
+<body>
+    <!--navigation bar-->
+    <nav>
+        <div class="containers nav__container">
+            <a href="main.html"><img src="Photos/blitz_logo-01.png" alt="logo" width="120" height="31"></a>
+            <ul class="navbar">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="thumbnail.html">Sports</a></li>
+                <li><a href="queryForm.html">Query Form</a></li>
+                <li><a href="Quiz.html">Quiz</a></li>
+                <li><a href="sitemap.html">Site Map</a></li>
+                <li><a href="additionalPage.html">Additional Page</a></li>
+                <li><a href="ourteam.html">About Us</a></li>
+                <li><button onclick="document.location='buyProducts.html'" class="btn btn-primary buy-product-btn" type="button">Buy Product</button></li>
+            </ul>
+        </div>
+    </nav>
+    <!--end navigation bar-->
+
+
+    <!--Query Form-->
+    <h2> | Blitz Sports Query Form | </h2>
+
+    <div>
+        <form name="qqform" action="mailto:pasindu.20210367@iit.ac.lk" method="POST" id="form">
+            <div class="qform">
+                <label class="label" for="fname">First Name</label>
+                <input type="text" class="form_input" name="fname" id="fname" placeholder="Firts Name">
+            </div>
+
+            <div class="qform">
+                <label class="label" for="lname">Last Name</label>
+                <input type="text" class="form_input" name="lname" id="lname" placeholder="Last Name">
+            </div>
+
+            <div class="qform">
+                <label class="label" for="email">Email</label>
+                <input type="email" class="form_input" name="email" id="email" placeholder="example@gmail.com">
+            </div>
+
+            <div class="qform">
+                <label class="label" for="c_number">Contact Number</label>
+                <input type="text" class="form_input" name="c_number" id="c_number" placeholder="+94 77 012 3456">
+            </div>
+
+            <div class="qform">
+                    <p class="sq"> <b> - Subject of the Query - </b> </p>
+                    <div class="qform_radioBtn">
+                        <label for="delivery" class="queryRadioLabel">Delivery</label>
+                        <input class="radioInput" type="radio" name="querySubject" id="delivery" value="Delivery"><br><br>
+                        <label for="stock" class="queryRadioLabel">Stock Availabilty</label>
+                        <input class="radioInput" type="radio" name="querySubject" id="stock" value="Stock Availabilty"><br><br>
+                        <label for="exchange" class="queryRadioLabel">Exchange</label>
+                        <input class="radioInput" type="radio" name="querySubject" id="exchange" value="Exchange"><br><br>
+                        <label for="other" class="queryRadioLabel">Other</label>
+                        <input class="radioInput" type="radio" name="querySubject" id="other" value="Other"><br><br>
+                    </div>
+            </div>
+            
+            <div class="qform">
+                <label for="qdetails">Query Detials</label>
+                <textarea class="fieldInput" name="qdetails" id="qdetails" rows="10" placeholder="Query Details"></textarea>
+            </div>
+
+            <div class="viewBtn">
+                <input type="button" value="View Query" id="viewQuery" style="height: 35px; width: 100px;" onclick="validation(this.form);">
+            </div>
+
+            <div id="summaryView">
+                <!-- This is summary of the form -->
+            </div>
+
+        </form>
+    </div>
+    <!--End Query Form-->
+
+    <button onclick="document.location='student2.html'" class="page-editor-btn" type="button">Page Editor</button>
+
+</body>
+
+</html>
+

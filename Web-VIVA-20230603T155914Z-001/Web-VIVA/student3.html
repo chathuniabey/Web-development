@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>page editor</title>
+        <link rel="shortcut icon" type="image/png" href="Photos/TabIconPng.png">
+        <link rel="stylesheet" href="page_editor.css">
+        <link rel="stylesheet" href="navbar.css">
+        <!--FONT-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,800;0,900;1,500;1,900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=SXgC25DgpSAqme8G7N-fW_Is-cpm2p5vMeDUxNxIwB9TjZuHj0GFmbHCzyglOXrnuB0aElOJQclSkFX2mvT6ner8M5amf9mQ9XovmjZGYu-js-YQ50uUFHPW5d3rMlF4XjZrlxScBdUg6dsmzF22oW-eClZVspadDRgW0KAdLRWGBShM3Aj-E2kZriiV5rHy2ymBRe3KW7RIpOXXTwPYd7K6ZSLfq6nO8ee1ULUUdagmOidP26t7ZGRf-9qnSly9_gLeMlS68yQ2PFpSOnyJgsVwMLMDJle_k1ZZMtYh42X73Z_BHukY9yK2mhqaErVp69J3tVzxm3Sp8OW3b4CTyEX47z9G5ad00Hgxopv_k1rIrTmf_66EFX_owa8qsH5amv_RgAgdagMjcvJDZhqEDQ22INyl-61rUrzLaHherkk7ZnrYDQ7RV_cLn_6VQzOzjz0_ctRSS_P_MeUN_hpJoU2B7udimpOIKm_xkujJpgUZ27I4JvXD7ej5doYjMJvTt1B6hz1jxrhp4xEhBtg26K7mQRpDj7552r8YNzob2_pwvFh1bPkexMUHwnoUiq2mG2LA3CYdHPA1Imi0wiWh2tdYgoDemdX4IKg4GZbrXExuDA4FJRydMmXECDy83mnns_3yrf9dBo1xrsuzsSjhEtflId7HqTHgsY6M_iYtIBy_6dpDadR-GOqvY7HOmuXhNsoDOiP0so_BSEZmlYTqr60meUdA80SYVxsG-0dLXc7sIqKEtU72IeAifikzYW7nXq-0G_e3v5U4EABAXdeXgVDgl5gg1ZHefOsrcCHqaswWT4dFQdQkX0q1nhpjYDX6n9wbMcCYRs_p_Cl0nfJsz77KG_d3_sNFV_Sir9Rzwo3G6LocdesV4e4z5eiJ01DFBurwO8IaIBt6HVjP3tk3imYhSM_jiqOSPETlkvjs9P7FWYsqiPl52KxAgN38XNbwxtfkfqw2orUiF30tNzc-wnDGa2q2DsQvL8St9YhsierN3SQRfH8cojPlz3Maf8dzo-gLYGDWp0Nm0mUcJSjiD5G8z_bAn-7nAcAdRnzSLCSDpvoN7CwxLkDQIJsPDfwU5LA55BPhvGHR7wVrR3qMt-k1c_NIZLP5XCpCrbARP4vM4GEH9fgb18j8oXqaIWjZqv6HxHi_OUneAqebid5Oek_2qJIsudxgt9ooNpiAJFClwuIxBIq6KI0sVaBST97Kr-dGi6XuQYzAsVDI82EFnQAAdbDCym3MThbKLQP9V9OmFX14ifTUv343vigFtpKt1jfbCeQUCoJPu0TnMbAHDQ" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9kb2MtMG8tMGctZG9jcy5nb29nbGV1c2VyY29udGVudC5jb20vZG9jcy9zZWN1cmVzYy9sNmliNXJuMDNuMTNodGZrMDI4c3FwdnNyc3FibWYwbS90NHRlOXRwaHE0MHMxcmtndnR1ZmhlNG1qZmQ2bTRqcy8xNjQ4NjI1NDc1MDAwLzAwNDQ4NDg5NDkxOTEwNjk4MzIwLzA5NDA3NDk4MjczMzAwMDc4MzY1LzFLQUpneTI2UG1pT0VWazFmUjlSXzVMcWVRc0FRY2huUz9lPWRvd25sb2FkJmF4PUFDeEVBc1lacWxfTk05T3R2bk1yejExdXZKQkI2cGhiS2RBTHhMV1hCN3ZIdV9kRXF4d2VqVllVbzJVZVdfV2l3SGtmeEE1bmFiTkhNRV9EeVRiQUFXYmc5eUdFQWdOMlp5NlFjaVhOc2czQXZnSTBvOHl3YThENjh1dlgwelFhWTRnWDc1LWxGUi10d0ZPTHVrdmQtNDRKbVZtazhxYlU0STg4M3k1Qnp4d2hCVVFDeDNIM1lNT3h1MDBiZDJOeDdIQVU4Sk1WNzV4bzdxaXVZSFloNWdoSURQRnp5TUxBemRrdFl4eUZobTFsSXpTckdub1ZkX2RGcVhlamVCRmtuenJVQXZGSVFuZTQwbThtN2ZlY2FRS1Y2VEZQNktvOFBMU2pZdUxkV0o5bGhpY1dOWWZicVJvUXNBUmVNY1UxcTRPWEdpeWYwVEU4Z29wTUhMOFNWSV9RdGJvV1EtMjJLOGRtVGQySzNCdjNEaTVoS1BjTlEyQjN3aVVndGJIQk0wZEtUeVFzWkxlRno1N2FmcHdhN2lpZlMweXpua1RtN2lOelpjZTJjR18wRE9FZFg3V2RlRjhWQ0Fac1JuandKWGctVThwVVl0b0lQVTUydXdnc0dMdFRNNEkzM005Xzk5bk1sYWx5MUdxT2R3R0JranNQMzRDdER2WUFaX0xJTi1ZWkc3SDUxeHlpNGo5TGZ5NndOaHZQWWhFYjJEU1FCZzFvSFFDRUZqOS1hTGI4bDBOMkFWQkRsYjc3QllqanhiNVNfUFQwTWo3SWZhS1RPV0d0QlJsLU83OUM4UTZ0ZTZseGtyLWNuLTNUbUNXMkQ4bENYM0pqYmdjMHEyb082Z3dxV1F6ZjVTV1l2T3luLWF1Mk5mRmYyV3R5aTRzXzFZTmktVGx4QkZKYkl2QzVoTGJPdkxfa2NlZ0pBN05FQzIzejM5ZDUmYXV0aHVzZXI9MA"/></head>
+    <body>
+        <!--Navigation bar-->
+        <nav>
+            <div class="containers nav__container">
+                <a href="main.html"><img src="Photos/blitz_logo-01.png" alt="" width="120" height="31"></a>
+                <ul class="navbar">
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="thumbnail.html">Sports</a></li>
+                    <li><a href="queryForm.html">Query Form</a></li>
+                    <li><a href="Quiz.html">Quiz</a></li>
+                    <li><a href="sitemap.html">Site Map</a></li>
+                    <li><a href="additionalPage.html">Additional Page</a></li>
+                    <li><a href="ourteam.html">About Us</a></li>
+                    <li><button onclick="document.location='buyProducts.html'" class="btn btn-primary buy-product-btn" type="button">Buy Product</button></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!--Student-->
+        <div class="about">
+            <div class="main">
+                <!--Student image-->
+                <div class="main_left">
+                    <img src="Photos/AboutUs3.png" alt="Chathuni" width="400" height="400">
+                </div>
+                <!--Student details-->
+                <div class="main_right">
+                    <h3>| Chathuni Bimasha Abeysinghe |</h3><br>
+                    <h3>UoW ID : w1867450<br>
+                        IIT ID : 20210356<br>
+                        ROLE: Student 3</h3><br>
+                    <ul>
+                        <li>Creating the Quiz.</li>
+                        <li>Creating the Student details.</li>
+                        <li>Creating the Main (Home) Page.</li>
+                        <li>Creating the Extra content page/anchors.</li>
+                        <li>Creating the Logo.</li>
+                        <li>Creating the Additional Page Editor.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

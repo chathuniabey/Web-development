@@ -1,0 +1,61 @@
+/*-- Headers --*/
+
+h1,h2 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 40px;
+    color: #c3073f;
+}
+
+/*-- IIT and Westminster logos --*/
+
+img {
+    margin-left: 35px;
+    margin-right: 40px;
+}
+
+#westminster_logo {
+    width: 160px;
+    height: 68px;
+}
+
+#IIT_logo {
+    padding-top: 5px;
+    width: 150px;
+    height: 63px;
+    float: right;
+}
+
+/*-- Name list --*/
+
+pre {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    white-space: pre;
+    margin-left: 5px;
+    font-size: 25px;
+} 
+
+/*-- Page Editor Btn -- */
+
+.page-editor-btn {
+    display: block;
+    margin-left: 50px;
+    font-size: .8em;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #c3073f;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    padding: .6em .6em;
+}
+
+.page-editor-btn:hover {
+    color: #000000;
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Quiz</title>
+        <link rel="shortcut icon" type="image/png" href="Photos/TabIconPng.png">
+        <link rel="stylesheet" href="Quiz.css">
+        <link rel="stylesheet" href="navBar.css">
+        <!--FONT-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,800;0,900;1,500;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--Navigation Bar-->
+        <nav>
+            <div class="containers nav__container">
+                <a href="main.html"><img src="Photos/blitz_logo-01.png" alt="" width="120" height="31"></a>
+                <ul class="navbar">
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="thumbnail.html">Sports</a></li>
+                    <li><a href="queryForm.html">Query Form</a></li>
+                    <li><a href="Quiz.html">Quiz</a></li>
+                    <li><a href="sitemap.html">Site Map</a></li>
+                    <li><a href="additionalPage.html">Additional Page</a></li>
+                    <li><a href="ourteam.html">About Us</a></li>
+                    <li><button onclick="document.location='buyProducts.html'" class="btn btn-primary buy-product-btn" type="button">Buy Product</button></li>
+                </ul>
+            </div>
+        </nav>
+        <!--Quiz content-->
+        <div id="all">
+            <div class="qheader">
+                <!--Quiz time-->
+                <h3 class="timer" id="timing">Time</h3>
+				<h2>| Quiz |</h2><br>
+                <!--Quiz rules-->
+                <h4>Some Rules of this Quiz.</h4><br>
+                <p class="rules">1.The quiz should consist of 10 questions.</p>
+                <p class="rules">2.You have only 60 seconds for all ten questions.</p>
+                <p class="rules">3.You can't select any option once time goes off.</p>
+                <p class="rules">4.Each correct answer get <span class = "correctAns">2 points</span> and the wrong answer gets <span class = "wrongAns">-1 point</span>.</p>
+            </div>
+            <!--Start funtion calling-->
+            <div class="startup">
+                <input class="st" id="start" type="submit"  value="Start"  onclick="start()">
+            </div>
+            
+            <!--Quiz summary popup box-->
+            <div class= "popup" id = "popup1">
+                <div class = "overlay"></div>
+                <div class = "content">
+                    <div class="closebtn" onclick="togglepopup()">&times;</div>
+                
+                    <!--Quiz summary content-->
+                    <h1>Quiz summary</h1>
+                    <br>
+                    <table style="width:100%">
+                    <tr>
+                        <td>Quiz marks</td>
+                        <td><p class="Score" id="Scoring"></p></td>
+                    </tr>
+                    <tr>
+                        <td>Quiz remainig time</td>
+                        <td><p class="timer2" id="timing2"></p></td>
+                    </tr>
+                    </table>
+                    <!--Quiz summary reset botton-->
+                    <input class="rst" id="resetButton1" type="submit" value="Reset" onclick="resetq()">
+                </div>
+            </div>
+            <!--Question 1-->
+            <div class="Container"><br>
+                <p class="questions">1. Who is considered the father of cricket?</p>
+                <div class="options">
+                    <br><br>
+                    <label class="white" id="ans_1"><input class="ans" type="radio" name="q1" value="1" > William Gilbert (W.G.) Grace</label>
+                    <br>
+                    <label><input class="ans" type="radio" name="q1" value="0"> Toney Greig</label>
+                    <br>
+                    <label><input class="ans" type="radio" name="q1" value="0"> Jaques Kallis</label>
+                    <br>
+                    <label><input class="ans" type="radio" name="q1" value="0"> Sir Lan Botham</label>
+                </div> 
+            </div>
+
+            <!--Question 2-->
+            <div class="Container"><br>
+                <p class="questions">2. What was the year of the first Cricket World Cup?</p>
+                <div class="options">
+                    <br><br>
+                    <label><input class="ans" type="radio" name="q2" value="0"> in 1984</label>
+                    <br>
+                    <label class="white" id="ans_2"><input class="ans" type="radio" name="q2" value="1"> in 1975</label>
+                    <br>
+                    <label><input class="ans" type="radio" name="q2" value="0"> in 1963</label>
+                    <br>
+                    <label><input class="ans" type="radio" name="q2" value="0"> in 1973</label>
+                </div>
+            </div>
+
+            <!--Question 3-->
+            <div class="Container"><br>
+                <p class="questions">3. Who is the Champions League's top goalscorer of all time?</p>
+                <div class="options">
+                    <br><br>
+                    <label><input class="ans" type="radio" name="q3" value="0"> Lionel Messi</label>
+                    <br>
+                    <label class="white" id="ans_3"><input class="ans" type="radio" name="q3" value="1"> Cristiano Ronaldo</label>
+                    <br>
+                    <label><input class="ans" type="radio" name="q3" value="0"> Radamel Falcao</label>
+                    <br>
+                    <label><input class="ans" type="radio" name="q3" value="0"> Zlatan Ibrahimovic</label>
+                </div>
+            </div>
+
+            <!--Question 4-->
+            <div class="Container"><br>
+                <p class="questions">4. Which country has won the most football World Cups?</p>
+                <div class="options">
+                    <br><br>
+                    <label><input class="ans" type="radio" name="q4" value="0"> Argentina</label>
+                    <br>
+                    <label><input class="ans" type="radio" name="q4" value="0"> Portugal</label>
+                    <br>
+                    <label class="white" id="ans_4"><input class="ans" type="radio" name="q4" value="1"> Brazil</label>
+                    <br>
+                    <label><input class="ans" type="radio" name="q4" value="0"> Colombia</label>
+                </div>
+            </div>
+
+            <!--Question 5-->
+            <div class="Container"><br>
+                <p class="questions">5. Fill in the gap: Rugby is a  ………  team sport.</p>
+                <div class="options">
+                   <br><br>
+                    <label class="white" id="ans_5"><input class="ans" type="radio" name="q5" value="1"> Full-contact</label>
+                    <br>
+                    <label><input class="ans" type="radio" name="q5" value="0"> Limited-contact</label>
+                    <br>
+                    <label><input class="ans" type="radio" name="q5" value="0"> Semi-contact</label>
+                    <br>
+                    <label><input class="ans" type="radio" name="q5" value="0"> Unlimited-contact</label>
+                </div>
+            </div>
+
+            <!--Question 6-->
+            <div class="Container"><br>
+                <p class="questions">6. At kickoff, how much ground should the ball travel to officially start a game of rugby?</p>
+                <div class="options">
+                    <br><br>
+                    <label><input class="ans" type="radio" name="q6" value="0"> 5 metres</label>
+                    <br>
+                    <label class="white" id="ans_6"><input class="ans" type="radio" name="q6" value="1"> 10 metres</label>
+                    <br>
+                    <label><input class="ans" type="radio" name="q6" value="0"> 20 meters</label>
+                    <br>
+                    <label><input class="ans" type="radio" name="q6" value="0"> 25 meters</label>
+                </div>
+            </div>
+
+            <!--Question 7-->
+            <div class="Container"><br>
+                <p class="questions">7. Fill in the gap: The regulation goal in basketball is  ………  feet high.</p>
+                <div class="options">
+                    <br><br>
+                    <label><input class="ans" type="radio" name="q7" value="0"> 15</label>
+                    <br>
+                    <label><input class="ans" type="radio" name="q7" value="0"> 5</label>
+                    <br>
+                    <label><input class="ans" type="radio" name="q7" value="0"> 20</label>
+                    <br>
+                    <label class="white" id="ans_7"><input class="ans" type="radio" name="q7" value="1"> 10</label>
+                </div>
+            </div>
+
+            <!--Question 8-->
+            <div class="Container"><br>
+                <p class="questions">8. What are the two lines at each end of the basketball court?</p>
+                <div class="options">
+                   <br><br>
+                    <label><input class="ans" type="radio" name="q8" value="0"> Lane/Paint</label>
+                    <br>
+                    <label><input class="ans" type="radio" name="q8" value="0"> Half Court Line</label>
+                    <br>
+                    <label class="white" id="ans_8"><input class="ans" type="radio" name="q8" value="1"> Base Lines</label>
+                    <br>
+                    <label><input class="ans" type="radio" name="q8" value="0"> Free Throw Line</label>
+                </div>
+            </div>
+
+            <!--Question 9-->
+            <div class="Container"><br>
+                <p class="questions">9. Which country is famous for tennis?</p>
+                <div class="options">
+                    <br><br>
+                    <label><input class="ans" type="radio" name="q9" value="0"> New Zealand</label>
+                    <br>
+                    <label class="white" id="ans_9"><input class="ans" type="radio" name="q9" value="1"> Australia</label>
+                    <br>
+                    <label><input class="ans" type="radio" name="q9" value="0"> Belgium</label>
+                    <br>
+                    <label><input class="ans" type="radio" name="q9" value="0"> Canada</label>
+                </div>
+            </div>
+
+            <!--Question 10-->
+            <div class="Container"><br>
+                <p class="questions">10. Which among these is the highest governing body of hockey?</p>
+                <div class="options">
+                    <br><br>
+                    <label class="white" id="ans_10"><input class="ans" type="radio" name="q10" value="1"> International Hockey Federation</label>
+                    <br>
+                    <label><input class="ans" type="radio" name="q10" value="0"> World Hockey Federation</label>
+                    <br>
+                    <label><input class="ans" type="radio" name="q10" value="0"> Federation of international Hockey</label>
+                    <br>
+                    <label><input class="ans" type="radio" name="q10" value="0"> International Hockey Association</label>
+                    
+                </div>
+            </div>
+				<!--Submit button and Reset button-->	
+                <div class="submitter">
+				    <input class="Sub" id="submitButton"   type="submit"  value="Submit"  onClick="submitq(),togglepopup(),backgroundChange(),hidetime(),displayTimer()"  >
+					<input class="rst2" id="resetButton2"   type="submit"  value="Reset"  onclick="resetq()">
+                </div>
+            
+        </div>
+        <!--Back to top-->
+        <a href="#top"><img src="Photos/backToTopIcon.png" alt="Top Button" id="arrow-btn"></a>
+
+        <script src="Quiz.js"></script>
+        
+        <!-- Page Editor -->
+        <button onclick="document.location='student3.html'" class="page-editor-btn" type="button">Page Editor</button>
+        <script>
+            mybutton = document.getElementById("arrow-btn");
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } 
+                else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            function topFunction() {
+                document.body.scrollTop = 0; 
+                document.documentElement.scrollTop = 0; 
+            }
+        </script>
+    </body>
+</html>
